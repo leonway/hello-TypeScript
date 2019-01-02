@@ -1,2 +1,4 @@
-var fn = () => "response";
+var a: number;
+
+a = 10;
 
