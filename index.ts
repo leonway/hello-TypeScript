@@ -1,7 +1,25 @@
-var a: number;
-var b: boolean;
-var c: string;
+class Person {
+	name:string;
+	age:number;
+	sayhello(){
+		console.log('hi');
+	}
+}
 
-a = 111;
-b = true;
-c = "hello world";
+class Programmer extends Person {
+	constructor(name?:string,age?:number){
+		super();
+		this.name = name;
+		this.age = age;
+}
+	sayhello(){
+		console.log('hello');
+	}
+	sayhelloLikePerson(){
+		this.sayhello()
+	}
+}
+
+let aProgrammer: Person = new Programmer();
+
+aProgrammer.sayhello()
